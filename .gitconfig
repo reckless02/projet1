@@ -1,0 +1,9 @@
+[user]
+	name = blabla45
+	email = moise.norca@hotmail.fr
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[gui]
+	recentrepo = C:/test

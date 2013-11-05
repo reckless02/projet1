@@ -1,0 +1,7 @@
+/web/app_dev.php
+/app/cache/*
+app/logs/*
+.gitconfig.swp
+_viminfo
+.travis.yml
+.index.html.swp

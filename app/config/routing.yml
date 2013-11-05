@@ -1,0 +1,4 @@
+eternity_new:
+    resource: "@eternityNewBundle/Resources/config/routing.yml"
+    prefix:   /
+
