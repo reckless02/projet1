@@ -1,7 +1,7 @@
 eternitynewBundle_homepage:
-    pattern:  /hello/{name}
+    pattern:  /hello
     defaults: { _controller: eternityNewBundle:Homepage:index }
 
 eternitynewBundle_contact:
-    pattern: /contact/{name}
+    pattern: /contact
     defaults: { _controller: eternityNewBundle:contact:contact }

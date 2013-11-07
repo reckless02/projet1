@@ -1,11 +1,17 @@
-{% extends "::layout.html.twig" %}
+{% extends "eternityNewBundle::layout.html.twig" %}
 
 {% block title %}eternityNewBundle:contact:contact{% endblock %}
 
 {% block body %}
-<h1>Welcome to the contact:contact page</h1>
+<h1>Welcome to the contactpage</h1>
 
-<form action="{{ path('eternityNewBundle_contact') }}" method="post" {{ form_enctype(form) }}>
+{% for flashMessage in app.session.flashbag.get('notice') %}
+    <div class="flash-notice">
+        {{ flashMessage }}
+    </div>
+{% endfor %}
+
+<form action="{{ path('eternitynewBundle_contact') }}" method="post" {{ form_enctype(form) }}>
  
     {{ form_errors(form.email) }}
     {{ form_widget(form.email, { 'attr':{'placeholder': 'Email' }}) }}
@@ -21,4 +27,6 @@
     <input type="submit" value="Envoyez"/>
  
 </form>
+
+<a href="{{ path("eternitynewBundle_homepage") }}">Retour à l'accueil</a>
 {% endblock %}
